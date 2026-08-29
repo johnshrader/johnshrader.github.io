@@ -201,20 +201,52 @@ footer{background:var(--ink);color:var(--steel);padding:56px 0 40px;font-size:13
         <p>Reviewed daily. We'll reply with personalized next steps — usually within hours.</p>
       </div>
       <!-- DRAFT: static form. Launch version emails submissions; production version embeds the Zoho CRM web form. -->
-      <!-- Zoho Forms embed: Client Application (SFA). Auto-resizes via Zoho's postMessage (zf_rszfm=1); 1150px fallback if messaging fails. -->
-<iframe id="zf_sfa" aria-label="Client Application" frameborder="0" scrolling="no" style="height:1150px;width:100%;border:none;display:block" src="https://forms.zohopublic.com/johncookin1/form/CLIENTAPPLICATIONSFA/formperma/Gzk1SkKmthSsXCQpcqfeI1lf7FsEoiJJ28CNdC2QWpY?zf_rszfm=1"></iframe>
-<script>
-window.addEventListener("message", function(e){
-  var d = e.data;
-  if (d && d.constructor === String) {
-    var p = d.split("|");
-    if (p.length === 2 || p.length === 3) {
-      var f = document.getElementById("zf_sfa");
-      if (f && f.src.indexOf(p[0]) > -1) { f.style.height = (parseInt(p[1],10) + 24) + "px"; }
-    }
-  }
-}, false);
-</script>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="hidden" name="_subject" value="New client application (SFA form)"><input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <div class="field"><label for="name">Your name *</label><input id="name" name="name" required autocomplete="name"></div>
+        <div class="field"><label for="biz">Business name</label><input id="biz" name="biz" autocomplete="organization"></div>
+        <div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+        <div class="field"><label for="phone">Phone *</label><input id="phone" name="phone" type="tel" required autocomplete="tel"></div>
+        <div class="field full"><label for="desc">Describe your food business *</label><textarea id="desc" name="desc" required placeholder="What do you make, and who do you sell to?"></textarea></div>
+        <div class="field"><label for="hours">Estimated kitchen hours per month *</label>
+          <select id="hours" name="hours" required>
+            <option value="">Select…</option>
+            <option>Under 10 hours</option>
+            <option>10–20 hours</option>
+            <option>20–40 hours</option>
+            <option>40+ hours</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="field"><label for="flex">How flexible is your schedule? *</label>
+          <select id="flex" name="flex" required>
+            <option value="">Select…</option>
+            <option>Very flexible</option>
+            <option>Somewhat flexible</option>
+            <option>I need exact days and times</option>
+          </select>
+        </div>
+        <div class="field"><label for="offpeak">Willing to work off-peak hours (6 PM – 6 AM)?</label>
+          <select id="offpeak" name="offpeak">
+            <option value="">Select…</option>
+            <option>Yes</option>
+            <option>Maybe</option>
+            <option>No</option>
+          </select>
+        </div>
+        <div class="field"><label for="cold">Will you need cold storage?</label>
+          <select id="cold" name="cold">
+            <option value="">Select…</option>
+            <option>Yes</option>
+            <option>Maybe</option>
+            <option>No</option>
+          </select>
+        </div>
+        <div class="field full"><label for="days">Ideal days &amp; times (and any alternatives)</label><input id="days" name="days" placeholder="e.g., Tuesdays and Thursdays, mornings — flexible on afternoons"></div>
+        <div class="field"><label for="start">When do you want to start? *</label><input id="start" name="start" required placeholder="e.g., October, ASAP, exploring"></div>
+        <div class="field full"><button class="cta" type="submit">Start the Fit Analysis</button></div>
+        <p class="form-note">* Required. Your information is used only to evaluate fit and respond to you — never sold or shared.</p>
+      </form>
     </div>
   </div>
 </section>
