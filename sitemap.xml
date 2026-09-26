@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.cookingblock.com/</loc></url>
-  <url><loc>https://www.cookingblock.com/facilities.html</loc></url>
-  <url><loc>https://www.cookingblock.com/become-a-client.html</loc></url>
-  <url><loc>https://www.cookingblock.com/booking.html</loc></url>
-  <url><loc>https://www.cookingblock.com/bistro.html</loc></url>
-  <url><loc>https://www.cookingblock.com/exchange.html</loc></url>
-  <url><loc>https://www.cookingblock.com/exchange-catering.html</loc></url>
-  <url><loc>https://www.cookingblock.com/exchange-raw-honey.html</loc></url>
-  <url><loc>https://www.cookingblock.com/contact.html</loc></url>
+  <url><loc>https://cookingblock.com/</loc></url>
+  <url><loc>https://cookingblock.com/facilities/</loc></url>
+  <url><loc>https://cookingblock.com/become-a-client/</loc></url>
+  <url><loc>https://cookingblock.com/bistro/</loc></url>
+  <url><loc>https://cookingblock.com/contact/</loc></url>
+  <url><loc>https://cookingblock.com/make/pet-treats/</loc></url>
+  <url><loc>https://cookingblock.com/make/personal-care/</loc></url>
+  <url><loc>https://cookingblock.com/privacy/</loc></url>
 </urlset>
