@@ -163,6 +163,16 @@ body.nav-open{overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover
 .log-row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
 @media(max-width:760px){.log-row{grid-template-columns:minmax(0,1fr)!important}}
 
+/* 26 Sep: headings balance their lines — no lone last word (John: "roof." on its own) */
+h1,h2{text-wrap:balance}
+p,li{text-wrap:pretty}
+
+/* 26 Sep (John): the hero's run-on paragraph becomes one line + fact chips, like Home's "Built for" */
+.facts{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:22px 0 0;padding:0}
+.facts li{border:1px solid rgba(255,255,255,.45);color:var(--white);padding:9px 15px;font-size:14px;font-weight:600;white-space:nowrap}
+.facts li.appr{background:var(--coral);border-color:var(--coral);color:var(--ink);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+@media(max-width:480px){.facts li{white-space:normal}}
+
 /* ---- Build S additions ---- */
 .photo{overflow:hidden}.photo img{display:block;width:100%;height:100%;min-height:inherit;object-fit:cover}
 .method{font-size:13px}

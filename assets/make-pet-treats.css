@@ -133,6 +133,10 @@ body.nav-open{overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover
 @media(max-width:400px){ .nav .logo img{display:none!important} header .wrap.nav{padding:0 14px!important} .nav .logo{font-size:15px!important} }
 @media(max-width:350px){ .nav{gap:6px!important} .nav .logo{font-size:14px!important;letter-spacing:0!important} .nav .signin{padding:6px 7px!important;font-size:11.5px!important} .nav .nav-toggle{padding:6px 8px!important;letter-spacing:.08em!important} }
 
+/* 26 Sep: headings balance their lines — no lone last word (John: "roof." on its own) */
+h1,h2{text-wrap:balance}
+p,li{text-wrap:pretty}
+
 /* ---- Build S additions ---- */
 .photo{overflow:hidden}.photo img{display:block;width:100%;height:100%;min-height:inherit;object-fit:cover}
 .method{font-size:13px}
