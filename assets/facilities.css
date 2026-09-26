@@ -173,6 +173,16 @@ p,li{text-wrap:pretty}
 .facts li.appr{background:var(--coral);border-color:var(--coral);color:var(--ink);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
 @media(max-width:480px){.facts li{white-space:normal}}
 
+/* 26 Sep (John): racks by the day and equipment by the hour, grouped — the platform's own three booking tabs */
+.beyond{background:var(--paper);padding:48px 0 44px;border-top:1px solid var(--steel)}
+.beyond h2{margin:4px 0 22px}
+.by-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.by{background:#fff;border:1px solid var(--steel);border-top:4px solid var(--coral);padding:22px 22px 20px}
+.by h3{font-family:'Fraunces',serif;font-size:21px;font-weight:600;margin:0 0 8px}
+.by p{margin:0;font-size:15px}
+.by-foot{margin:16px 0 0;font-size:14px;color:var(--slate-deep)}
+@media(max-width:700px){.by-row{grid-template-columns:minmax(0,1fr)}}
+
 /* ---- Build S additions ---- */
 .photo{overflow:hidden}.photo img{display:block;width:100%;height:100%;min-height:inherit;object-fit:cover}
 .method{font-size:13px}
