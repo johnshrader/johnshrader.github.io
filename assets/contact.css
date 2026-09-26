@@ -102,6 +102,10 @@ p,li{text-wrap:pretty}
 .map-go{margin:12px 0 0}
 .btn-dir{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;padding:13px 20px}
 
+/* 26 Sep (John): the reach line was grey on grey; it now reads like the paragraph above, at the same width */
+.hero .lede,.hero .reach{max-width:640px}
+.hero .reach{color:#E4E7EC;margin-top:14px;font-size:15px;line-height:1.6}
+
 /* ---- Build S additions ---- */
 .photo{overflow:hidden}.photo img{display:block;width:100%;height:100%;min-height:inherit;object-fit:cover}
 .method{font-size:13px}
