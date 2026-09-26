@@ -138,6 +138,31 @@ body.nav-open{overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover
 @media(max-width:400px){ .nav .logo img{display:none!important} header .wrap.nav{padding:0 14px!important} .nav .logo{font-size:15px!important} }
 @media(max-width:350px){ .nav{gap:6px!important} .nav .logo{font-size:14px!important;letter-spacing:0!important} .nav .signin{padding:6px 7px!important;font-size:11.5px!important} .nav .nav-toggle{padding:6px 8px!important;letter-spacing:.08em!important} }
 
+/* 26 Sep: "Included" as a striking tile grid; deliveries promoted; the Bistro cross-sell */
+.included{margin:26px 0 8px;background:var(--ink);color:var(--white);padding:30px 28px;border-radius:4px}
+.inc-h{font-family:'Fraunces',serif;font-size:clamp(20px,2.2vw,26px);font-weight:600;margin:0 0 20px;color:var(--white)}
+.inc-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.inc{display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.06);padding:14px;border-left:3px solid var(--coral)}
+.inc svg{flex:0 0 26px;width:26px;height:26px;fill:none;stroke:var(--coral);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.inc .t{font-weight:700;font-size:14.5px}
+.inc .d{font-size:13px;color:#D8DCE2;margin-top:2px}
+@media(max-width:900px){.inc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.inc-grid{grid-template-columns:minmax(0,1fr)}.included{padding:24px 18px}}
+.deliveries{margin-top:26px;display:flex;gap:16px;align-items:center;background:rgba(255,255,255,.08);border:1px solid var(--coral);padding:18px 20px}
+.deliveries p{margin:0;color:#E4E7EC;font-size:15px}
+.deliveries b{color:var(--white)}
+.dl-tag{flex:0 0 auto;background:var(--coral);color:var(--ink);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;padding:6px 10px}
+@media(max-width:560px){.deliveries{flex-direction:column;align-items:flex-start}}
+.xsell{background:var(--paper);border-top:1px solid var(--steel);border-bottom:1px solid var(--steel);padding:36px 0}
+.xsell .wrap{display:flex;gap:28px;align-items:center;justify-content:space-between}
+.xsell h2{font-size:clamp(24px,2.6vw,32px);margin:4px 0 8px}
+.xsell p{max-width:640px;margin:0}
+.btn-x{flex:0 0 auto;border:1.5px solid var(--ink);padding:12px 18px;text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+@media(max-width:760px){.xsell .wrap{flex-direction:column;align-items:flex-start}}
+
+.log-row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+@media(max-width:760px){.log-row{grid-template-columns:minmax(0,1fr)!important}}
+
 /* ---- Build S additions ---- */
 .photo{overflow:hidden}.photo img{display:block;width:100%;height:100%;min-height:inherit;object-fit:cover}
 .method{font-size:13px}

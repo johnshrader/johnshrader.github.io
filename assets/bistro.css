@@ -212,6 +212,34 @@ form{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(max-width:620px){form{grid-template-columns:minmax(0,1fr)}}
 .field input,.field select,.field textarea{width:100%;min-width:0;box-sizing:border-box}
 
+/* 26 Sep (John): the Bistro is built around the estimate — hero buttons, one split price card, doors as bullets */
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:34px}
+.hero-ctas .cta{margin-top:0}
+.cta-2{display:inline-block;color:var(--white);text-decoration:none;font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;padding:15px 24px;border:1.5px solid rgba(255,255,255,.55)}
+.cta-2:hover{border-color:var(--white)}
+.door .intro{font-weight:600;margin:10px 0 8px}
+.door .dl{margin:0 0 4px 18px;padding:0;flex-grow:1}
+.door .dl li{margin:6px 0;font-size:14.5px;line-height:1.45}
+.price-wrap{align-items:stretch}
+.est{background:#fff;border:1px solid var(--steel);padding:26px 26px 24px}
+.est-h{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--slate-deep);margin:0 0 14px}
+.est-row{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid #E4E7EC}
+.est-row .n{font-weight:700}
+.est-row .s{font-size:12.5px;color:var(--slate-deep);margin-top:2px}
+.est-row .amt{font-family:'Fraunces',serif;font-size:20px;font-weight:600;min-width:80px;text-align:right}
+.step{display:inline-flex;align-items:center;border:1px solid var(--steel)}
+.step button{width:36px;height:36px;border:0;background:var(--paper);font:700 18px/1 Archivo,sans-serif;cursor:pointer;color:var(--ink)}
+.step button:hover{background:#E4E7EC}
+.step output{min-width:34px;text-align:center;font-weight:700}
+.est-total{display:flex;justify-content:space-between;align-items:baseline;padding:18px 0 4px}
+.est-total .lab{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+.est-total .num{font-family:'Fraunces',serif;font-size:40px;font-weight:600;line-height:1}
+.est-dep{font-size:13px;color:var(--slate-deep);margin:0 0 16px}
+.stamp{display:inline-block;margin:4px 0 16px;padding:9px 16px;border:2.5px solid var(--coral-deep,#C4623F);color:var(--coral-deep,#C4623F);font:800 14px/1 Archivo,sans-serif;letter-spacing:.2em;text-transform:uppercase;transform:rotate(-2.5deg);outline:1px solid var(--coral-deep,#C4623F);outline-offset:3px}
+.est-food{font-size:14px;color:var(--ink);margin:0 0 18px;line-height:1.5}
+.est .cta{margin-top:0;width:100%;text-align:center;box-sizing:border-box}
+@media(max-width:560px){.est{padding:20px 16px}.est-row{grid-template-columns:minmax(0,1fr) auto;row-gap:8px}.est-row .amt{grid-column:2;grid-row:1}.est-row .step{grid-column:1/-1;justify-self:start}}
+
 /* ---- Build S additions ---- */
 .photo{overflow:hidden}.photo img{display:block;width:100%;height:100%;min-height:inherit;object-fit:cover}
 .method{font-size:13px}
