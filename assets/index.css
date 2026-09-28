@@ -97,6 +97,7 @@ h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(30px,3.6vw,44px)
 .location{background:var(--slate);color:var(--white)}
 .location .eyebrow{color:var(--steel)}
 .location .lede{color:#E4E7EC}
+.location .reach{color:#E4E7EC;margin-top:10px;font-size:15px;line-height:1.6;max-width:63.5ch}   /* 63.5ch at 15px = the lede's 56ch at 17px: the same width (as Contact, GL5) */
 .loc-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:36px;background:rgba(255,255,255,.15)}
 .loc-facts div{background:var(--slate-deep);padding:24px 22px}
 .loc-facts .t{font-family:'Fraunces',serif;font-size:19px;font-weight:600}
